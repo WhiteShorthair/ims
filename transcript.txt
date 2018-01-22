@@ -1,0 +1,98 @@
+
+    ******************************************************
+      Welcome to use Interactive music shell
+    ******************************************************
+    ######## use 'Help' to get a list of commands ########
+ims> help
+  Help - display available commands
+  Exit - save state of artist and track then exit
+  Info - display a high level summary of the state
+  Info track - display info about a certain track by number
+  Info artist - display info about a certain artist, by id
+  Add Artist - add a new artist to storage. e.g. add artist john osborne
+  Add Track - add a new track to storage. e.g. add track watching the sky turn green by jo
+  Play Track - record that an existing track was played at the current time. e.g. play track 13
+  Count tracks - display how many tracks are known by a vertain artist. e.g. count tracks by jo
+  List tracks - display the tracks palyed by a certain artist. e.g. list tracks by jo
+
+ims> info
+Total track number: 5
+Total artist number: 5
+Last three played track:
+------------ Track Info -------------
+Track Number: 4
+Title: want to be with you
+Artist: Josh Miller (id: jm)
+Last Played Time: 2018-01-18 21:49:15 -0500
+------------ Track Info -------------
+Track Number: 2
+Title: want to be with you
+Artist: Jo Lin (id: jl)
+Last Played Time: 2018-01-18 21:49:18 -0500
+------------ Track Info -------------
+Track Number: 5
+Title: want to be with you
+Artist: Jim L (id: jl2)
+Last Played Time: 2018-01-18 21:49:21 -0500
+
+ims> info track 1
+Track Number: 1
+Title: wanna wanna
+Artist: Jo Lin (id: jl)
+Last Played Time: 
+
+ims> info track 6
+Track 6 does not exist in database!
+
+ims> info artist jj
+Artist with ID jj does not exist in database!
+
+ims> info artist jl
+ID: jl
+Artist: Jo Lin
+Tracks: 
+------------ Track Info -------------
+Track Number: 1
+Title: wanna wanna
+Artist: Jo Lin (id: jl)
+Last Played Time: 
+------------ Track Info -------------
+Track Number: 2
+Title: want to be with you
+Artist: Jo Lin (id: jl)
+Last Played Time: 2018-01-18 21:49:18 -0500
+
+ims> add artist Kitty Brown
+New artist Kitty Brown added succesfully with artist id kb!
+
+ims> add artist Kitty Brown
+Artist Kitty Brown already exists in database!
+
+ims> add track one two three by Kitty Brown
+New track one two three by Kitty Brown added succesfully!
+
+ims> add track one two three by Nill Brown
+New artist Nill Brown added succesfully with artist id nb!
+New track one two three by Nill Brown added succesfully!
+
+ims> play track 3  
+Track 3 wanna wanna is playing!
+
+ims> count track by jl
+[ERROR] Please input valid artist id!
+ims> count tracks by jl
+The track count for artist Jo Lin (jl) is 2
+
+ims> list tracks by jl
+------------ Track Info -------------
+Track Number: 1
+Title: wanna wanna
+Artist: Jo Lin (id: jl)
+Last Played Time: 
+------------ Track Info -------------
+Track Number: 2
+Title: want to be with you
+Artist: Jo Lin (id: jl)
+Last Played Time: 2018-01-18 21:49:18 -0500
+
+ims> exit

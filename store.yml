@@ -1,0 +1,130 @@
+---
+:tracks:
+  '1': !ruby/object:Track
+    title: wanna wanna
+    artist: Jo Lin
+    artist_id: jl
+    number: 1
+    played_time: 
+  '2': !ruby/object:Track
+    title: want to be with you
+    artist: Jo Lin
+    artist_id: jl
+    number: 2
+    played_time: 2018-01-18 21:49:18.766075000 -05:00
+  '3': &4 !ruby/object:Track
+    title: wanna wanna
+    artist: John Lym
+    artist_id: jl1
+    number: 3
+    played_time: 2018-01-22 15:46:58.914455000 -05:00
+  '4': !ruby/object:Track
+    title: want to be with you
+    artist: Josh Miller
+    artist_id: jm
+    number: 4
+    played_time: 2018-01-18 21:49:15.751549000 -05:00
+  '5': !ruby/object:Track
+    title: want to be with you
+    artist: Jim L
+    artist_id: jl2
+    number: 5
+    played_time: 2018-01-18 21:49:21.162733000 -05:00
+  '6': &2 !ruby/object:Track
+    title: one two three
+    artist: kb
+    artist_id: k
+    number: 6
+    played_time: 
+  '7': &1 !ruby/object:Track
+    title: one two three
+    artist: Kitty Brown
+    artist_id: kb
+    number: 7
+    played_time: 
+  '8': &3 !ruby/object:Track
+    title: one two three
+    artist: Nill Brown
+    artist_id: nb
+    number: 8
+    played_time: 
+:artists:
+  jl: !ruby/object:Artist
+    id: jl
+    artist: Jo Lin
+    tracks:
+    - !ruby/object:Track
+      title: wanna wanna
+      artist: Jo Lin
+      artist_id: jl
+      number: 1
+      played_time: 
+    - !ruby/object:Track
+      title: want to be with you
+      artist: Jo Lin
+      artist_id: jl
+      number: 2
+      played_time: 2018-01-18 21:49:18.766075000 -05:00
+  jl1: !ruby/object:Artist
+    id: jl1
+    artist: John Lym
+    tracks:
+    - !ruby/object:Track
+      title: wanna wanna
+      artist: John Lym
+      artist_id: jl1
+      number: 3
+      played_time: 
+  jm: !ruby/object:Artist
+    id: jm
+    artist: Josh Miller
+    tracks:
+    - !ruby/object:Track
+      title: want to be with you
+      artist: Josh Miller
+      artist_id: jm
+      number: 4
+      played_time: 2018-01-18 21:49:15.751549000 -05:00
+  jl2: !ruby/object:Artist
+    id: jl2
+    artist: Jim L
+    tracks:
+    - !ruby/object:Track
+      title: want to be with you
+      artist: Jim L
+      artist_id: jl2
+      number: 5
+      played_time: 2018-01-18 21:49:21.162733000 -05:00
+  jl3: !ruby/object:Artist
+    id: jl3
+    artist: Jimmy Lorren
+    tracks: []
+  kb: !ruby/object:Artist
+    id: kb
+    artist: Kitty Brown
+    tracks:
+    - *1
+  k: !ruby/object:Artist
+    id: k
+    artist: kb
+    tracks:
+    - *2
+  nb: !ruby/object:Artist
+    id: nb
+    artist: Nill Brown
+    tracks:
+    - *3
+:last_played:
+- !ruby/object:Track
+  title: want to be with you
+  artist: Jo Lin
+  artist_id: jl
+  number: 2
+  played_time: 2018-01-18 21:49:18.766075000 -05:00
+- !ruby/object:Track
+  title: want to be with you
+  artist: Jim L
+  artist_id: jl2
+  number: 5
+  played_time: 2018-01-18 21:49:21.162733000 -05:00
+- *4
